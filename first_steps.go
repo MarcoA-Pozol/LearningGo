@@ -13,12 +13,33 @@ func main() {
 	last_name := "Pozol" // Var type autodetection
 	const PI = 3.14
 
+	// Lists
+	var namesList = []string{"Juan", "Andrea", "Jason", "Jennifer"}
+
+	// Arrays
+	var numbersArray [4]int
+	numbersArray[0] = 78
+	numbersArray[1] = 19
+	numbersArray[2] = 22
+	numbersArray[3] = 95
+
+	var sizesArray [4]string
+	sizesArray[0] = "S"
+	sizesArray[1] = "M"
+	sizesArray[2] = "L"
+	sizesArray[3] = "XL"
+
+	// Printing
 	fmt.Println(name)
 	fmt.Println(last_name)
 	fmt.Println(PI)
 
 	fmt.Println(sumNumbers())
 	fmt.Println(getTwoNumbersAverage(458, 540))
+
+	fmt.Println(numbersArray)
+	fmt.Println(namesList)
+	fmt.Println(sizesArray)
 }
 
 func sumNumbers() int {
