@@ -71,13 +71,13 @@ func getMaxNumberOfAList(listOfNumbers []int) int{
 		panic("Empty list")
 	}
 	
-	max := numbers[0]
-	for_, num := range listOfNumbers {
-		if (num>max) {
+	max := listOfNumbers[0]
+	for _, num := range listOfNumbers {
+		if num > max {
 			max = num
 		}
 	}
 	
-	result = max
+	result := max
 	return result
 }
