@@ -15,6 +15,7 @@ func main() {
 
 	// Lists
 	var namesList = []string{"Juan", "Andrea", "Jason", "Jennifer"}
+	var numbersList = []int{12, 160, 94, 35, 28, 63, 121, 79, 5, 65, 90, 150}
 
 	// Arrays
 	var numbersArray [4]int
@@ -38,9 +39,12 @@ func main() {
 	fmt.Println(last_name)
 	fmt.Println(PI)
 
+	// Calling functions
 	fmt.Println(sumNumbers())
 	fmt.Println(getTwoNumbersAverage(458, 540))
-
+	fmt.Println(getMaxNumberOfAList(numbersList))
+	
+	// Viewing data structures
 	fmt.Println(numbersArray)
 	fmt.Println(namesList)
 	fmt.Println(sizesArray)
@@ -56,4 +60,24 @@ func sumNumbers() int {
 
 func getTwoNumbersAverage(a int, b int) int {
 	return (a + b) / 2
+}
+
+func getMaxNumberOfAList(listOfNumbers []int) int{ 
+	/*
+		Receive a list of numbers and retrieve the higher of them.
+	*/
+	
+	if len(listOfNumbers) == 0 {
+		panic("Empty list")
+	}
+	
+	max := numbers[0]
+	for_, num := range listOfNumbers {
+		if (num>max) {
+			max = num
+		}
+	}
+	
+	result = max
+	return result
 }
